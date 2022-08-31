@@ -7,11 +7,11 @@ metadata:
 spec:
   tls:
     - hosts:
-      - dev.kops.mydomain.com
+      - mywww.mydomain.com
       # tls-secret should be created before applying ingress 
       secretName: tls-secret
   rules:
-    - host: dev.kops.mydomain.com
+    - host: mywww.mydomain.com
       http:
         paths:
         - path: /bluesvc
